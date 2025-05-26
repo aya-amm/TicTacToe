@@ -60,7 +60,7 @@ int main(){
 }
 
 int checkwin(){
-    // Horizontal Winning Condition
+    // Horizontal
     if(square[1] == square[2] && square[2] == square[3])
         return 1;
     else if(square[4] == square[5] && square[5] == square[6])
@@ -68,7 +68,7 @@ int checkwin(){
     else if(square[7] == square[8] && square[8] == square[9])
         return 1;
 
-    // Vertical Winning Condition
+    // Vertical
     else if(square[1] == square[4] && square[4] == square[7])
         return 1;
     else if(square[2] == square[5] && square[5] == square[8])
@@ -76,7 +76,7 @@ int checkwin(){
     else if(square[3] == square[6] && square[6] == square[9])
         return 1;
 
-    // Diagonal Winning Condition
+    // Diagonal
     else if(square[1] == square[5] && square[5] == square[9])
         return 1;
     else if(square[3] == square[5] && square[5] == square[7])
